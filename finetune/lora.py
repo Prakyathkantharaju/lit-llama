@@ -24,8 +24,8 @@ from lit_llama.tokenizer import Tokenizer
 from scripts.prepare_alpaca import generate_prompt
 
 
-eval_interval = 100
-save_interval = 100
+eval_interval = 10
+save_interval = 10
 eval_iters = 100
 log_interval = 1
 
@@ -114,6 +114,7 @@ def train(
             optimizer.step()
             optimizer.zero_grad()
             step_count += 1
+            print(f"step {step_count}")
                 
             if step_count % eval_interval == 0:
                 val_loss = validate(fabric, model, val_data, tokenizer_path)

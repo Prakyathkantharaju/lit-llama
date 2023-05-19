@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 
 DATA_FILE = "https://gist.github.com/Prakyathkantharaju/fcab7aa848c4abc87fc629641d17f2e6#file-robot_instruction_inputs-json"
-DATA_FILE_NAME = "alpaca_data_cleaned_archive.json"
+DATA_FILE_NAME = "gpt-3-v2.json"
 IGNORE_INDEX = -1
 
 
