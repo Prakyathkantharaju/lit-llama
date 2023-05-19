@@ -14,7 +14,7 @@ from lit_llama.tokenizer import Tokenizer
 from tqdm import tqdm
 
 
-DATA_FILE = "https://raw.githubusercontent.com/tloen/alpaca-lora/main/alpaca_data_cleaned_archive.json"
+DATA_FILE = "https://gist.github.com/Prakyathkantharaju/fcab7aa848c4abc87fc629641d17f2e6#file-robot_instruction_inputs-json"
 DATA_FILE_NAME = "alpaca_data_cleaned_archive.json"
 IGNORE_INDEX = -1
 
