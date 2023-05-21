@@ -23,8 +23,8 @@ lora_dropout = 0.05
 
 
 def main(
-    prompt: str = "What food do lamas eat?",
-    input: str = "",
+    prompt: str = "you are a agent navigating in a room using drone, you job is to give one command to the robot and you should reach the person. You will be given summary of the room, and if the person is present and distance from the person and normalized location of the camera frame. you have only 9 options, left, right, forward, backward, clockwise, anti-clockwise, moveup, movedown and done. Output is just one command from the above list. Location is in the photo frame, lower is left and higher is right. i.e [0.1] person is in the left so robot should move left  and [0.9] person is in the right so robot should move right. You results will be read by the robot and it will move accordingly.  please slect the command from the list and give it to the robot.",
+    input: str = "{'names': 'person', 'distance': 0.56, 'width': 0.14, 'height': 0.04, 'location': 0.17, 'summary': 'there is a white refrigerator with a black door and a white sign'}",
     lora_path: Path = Path("out/lora/alpaca/lit-llama-lora-finetuned.pth"),
     pretrained_path: Path = Path("checkpoints/lit-llama/7B/lit-llama.pth"),
     tokenizer_path: Path = Path("checkpoints/lit-llama/tokenizer.model"),
